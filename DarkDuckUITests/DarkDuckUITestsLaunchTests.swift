@@ -2,7 +2,7 @@
 //  DarkDuckUITestsLaunchTests.swift
 //  DarkDuckUITests
 //
-//  Created by Elif Arslancelik on 7.05.2025.
+//  Created by can on 7.05.2025.
 //
 
 import XCTest

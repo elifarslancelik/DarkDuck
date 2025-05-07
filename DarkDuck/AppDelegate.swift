@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  DarkDuck
-//
-//  Created by Elif Arslancelik on 7.05.2025.
-//
-
 import Cocoa
 
 @main
@@ -19,9 +12,3 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
 }
-extension AppDelegate {
-    func applicationSupportsSecureRestorableState(_ app: NSApplication) -> Bool {
-        return true
-    }
-}
-

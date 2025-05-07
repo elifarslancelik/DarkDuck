@@ -1,39 +1,50 @@
-//
-//  ViewController.swift
-//  DarkDuck
-//
-//  Created by Elif Arslancelik on 7.05.2025.
-//
-
 import Cocoa
 import SafariServices
-import WebKit  // WKWebView'i kullanabilmek için WebKit'i import etmelisiniz.
+import WebKit
 
-class ViewController: NSViewController {
-    
-    @IBOutlet weak var webView: WKWebView!  // WKWebView outlet'i ekleyin
-    
+let extensionBundleIdentifier = "sanayi.DarkDuck.Extension"
+
+class ViewController: NSViewController, WKNavigationDelegate, WKScriptMessageHandler {
+
+    @IBOutlet var webView: WKWebView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // webView ile işlem yapabilirsiniz, örneğin bir URL yüklemek:
-        let url = URL(string: "https://tr.wikipedia.org/")!
-        let request = URLRequest(url: url)
-        webView.load(request)
+
+        self.webView.navigationDelegate = self
+
+        self.webView.configuration.userContentController.add(self, name: "controller")
+
+        self.webView.loadFileURL(Bundle.main.url(forResource: "Main", withExtension: "html")!, allowingReadAccessTo: Bundle.main.resourceURL!)
     }
 
-    @IBAction func openSafariExtensionPreferences(_ sender: Any) {
-        SFSafariApplication.showPreferencesForExtension(withIdentifier: "com.elif.DarkDuck.DarkDuck-Extension") { error in
-            if let error = error {
-                // Hata oluşursa logla
-                NSLog("Hata oluştu: %@", error.localizedDescription)
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        SFSafariExtensionManager.getStateOfSafariExtension(withIdentifier: extensionBundleIdentifier) { (state, error) in
+            guard let state = state, error == nil else {
+                // Insert code to inform the user that something went wrong.
+                return
+            }
+
+            DispatchQueue.main.async {
+                if #available(macOS 13, *) {
+                    webView.evaluateJavaScript("show(\(state.isEnabled), true)")
+                } else {
+                    webView.evaluateJavaScript("show(\(state.isEnabled), false)")
+                }
             }
         }
     }
 
-    override var representedObject: Any? {
-        didSet {
-            // Update the view, if already loaded.
+    func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+        if (message.body as! String != "open-preferences") {
+            return;
+        }
+
+        SFSafariApplication.showPreferencesForExtension(withIdentifier: extensionBundleIdentifier) { error in
+            DispatchQueue.main.async {
+                NSApplication.shared.terminate(nil)
+            }
         }
     }
+
 }
