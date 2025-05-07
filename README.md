@@ -27,19 +27,12 @@
 3. In the "**Executable**" section (center panel), click the dropdown.
 4. Choose **None**
 
-## 📂 Project Structure
+## DarkDuck On/Off SS
 
 ```bash
-DarkDuck/
-├── DarkDuck/                  # Main macOS container app
-│   ├── AppDelegate.swift
-│   └── Assets.xcassets
-├── DarkDuck Extension/        # Safari Web Extension
-│   ├── manifest.json
-│   ├── content.js
-│   ├── popup.css
-│   └── background.js
-├── Shared/                    # Shared resources (optional)
-│   └── DarkDuck_Extension.entitlements
-├── README.md
-└── Info.plist
+## 🖼️ DarkDuck
+
+![DarkDuckOn](onss.png)
+
+![DarkDuckOff](offss.png)
+
