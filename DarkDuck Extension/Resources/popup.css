@@ -1,15 +1,130 @@
-:root {
-    color-scheme: light dark;
+/* Genel sayfa stilleri */
+html, body {
+  background-color: #121212 !important;
+  color: #e0e0e0 !important;
+  scrollbar-color: #444 #222 !important;
 }
 
-body {
-    width: 100px;
-    padding: 10px;
-
-    font-family: system-ui;
-    text-align: center;
+/* Linkler */
+a {
+  color: #90caf9 !important;
+  text-decoration: none !important;
 }
 
-@media (prefers-color-scheme: dark) {
-    /* Dark Mode styles go here. */
+a:hover {
+  color: #bbdefb !important;
+  text-decoration: underline !important;
+}
+
+/* Butonlar */
+.toggle-btn {
+  padding: 8px 16px;
+  background: #ddd;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.toggle-btn.active {
+  background: #0f9b8e;
+  color: white;
+}
+
+button:hover {
+  background-color: #666 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
+}
+
+button:active {
+  transform: translateY(0) !important;
+}
+
+button.active {
+  background-color: #0f9b8e !important;
+  color: #fff !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2) !important;
+}
+
+button.active:hover {
+  background-color: #0d8e7c !important;
+}
+
+/* Dark Mode Teması */
+.darkduck-theme {
+  background-color: #1a1a1a !important;
+  color: #f0f0f0 !important;
+}
+
+.darkduck-theme body {
+  background-color: #1a1a1a !important;
+  color: #f0f0f0 !important;
+}
+
+/* Tüm ana elementler */
+.darkduck-theme header,
+.darkduck-theme footer,
+.darkduck-theme div,
+.darkduck-theme section,
+.darkduck-theme article,
+.darkduck-theme nav,
+.darkduck-theme aside,
+.darkduck-theme main {
+  background-color: #2a2a2a !important;
+  color: #f0f0f0 !important;
+}
+
+/* Form elementleri */
+.darkduck-theme input,
+.darkduck-theme textarea,
+.darkduck-theme select {
+  background-color: #333 !important;
+  color: #fff !important;
+  border: 1px solid #444 !important;
+}
+
+/* Tablolar */
+.darkduck-theme table {
+  background-color: #2a2a2a !important;
+  border-color: #444 !important;
+}
+
+.darkduck-theme th,
+.darkduck-theme td {
+  border-color: #444 !important;
+}
+
+/* Özel elementler */
+.darkduck-theme .card,
+.darkduck-theme .panel,
+.darkduck-theme .modal {
+  background-color: #2a2a2a !important;
+  border-color: #444 !important;
+}
+
+.darkduck-theme a {
+  color: #4dabf7 !important;
+}
+
+.darkduck-theme button {
+  background-color: #333 !important;
+  color: #fff !important;
+}
+
+/* Scrollbar */
+.darkduck-theme ::-webkit-scrollbar {
+  width: 12px !important;
+}
+
+.darkduck-theme ::-webkit-scrollbar-track {
+  background: #2a2a2a !important;
+}
+
+.darkduck-theme ::-webkit-scrollbar-thumb {
+  background: #444 !important;
+  border-radius: 6px !important;
+}
+
+.darkduck-theme ::-webkit-scrollbar-thumb:hover {
+  background: #555 !important;
 }

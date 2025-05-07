@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+    <!-- ... existing meta tags ... -->
     <link rel="stylesheet" href="../Style.css">
     <script src="../Script.js" defer></script>
 </head>
-<body>
+<body class="dark-mode-inactive">
     <img src="../Icon.png" width="128" height="128" alt="DarkDuck Icon">
-    <p class="state-unknown">You can turn on DarkDuck’s extension in Safari Extensions preferences.</p>
-    <p class="state-on">DarkDuck’s extension is currently on. You can turn it off in Safari Extensions preferences.</p>
-    <p class="state-off">DarkDuck’s extension is currently off. You can turn it on in Safari Extensions preferences.</p>
-    <button class="open-preferences">Quit and Open Safari Extensions Preferences…</button>
+    <div class="status-container">
+        <p class="state-unknown">Checking DarkDuck status...</p>
+        <p class="state-on">Dark Mode: ACTIVE</p>
+        <p class="state-off">Dark Mode: INACTIVE</p>
+    </div>
+    <div class="buttons">
+        <button class="open-preferences">Safari Preferences</button>
+        <button class="dark-mode-toggle">Toggle Dark Mode</button>
+    </div>
 </body>
 </html>

@@ -19,4 +19,14 @@ function openPreferences() {
     webkit.messageHandlers.controller.postMessage("open-preferences");
 }
 
+// Yeni eklenecek fonksiyon: Dark mode toggle
+function toggleDarkMode() {
+    webkit.messageHandlers.controller.postMessage({
+        action: "toggleDarkMode"
+    });
+}
+
+// Toggle butonuna event listener eklemek
+document.querySelector("button.toggle-darkmode").addEventListener("click", toggleDarkMode);
+
 document.querySelector("button.open-preferences").addEventListener("click", openPreferences);
