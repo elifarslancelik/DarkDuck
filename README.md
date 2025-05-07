@@ -19,6 +19,13 @@
 4. Build and run the project (`Cmd + R`).
 5. Activate the extension in Safari:
    - Safari > Settings > Extensions > Enable **DarkDuck**
+  
+## 🔧 Prevent Container App Window from Launching
+✅ Solution: Set Executable to None
+1. Open the **Product > Scheme > Edit Scheme...** menu in Xcode.
+2. Select the "**Run**" action from the left panel.
+3. In the "**Executable**" section (center panel), click the dropdown.
+4. Choose **None**
 
 ## 📂 Project Structure
 
