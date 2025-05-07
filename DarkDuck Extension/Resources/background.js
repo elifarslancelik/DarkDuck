@@ -3,7 +3,7 @@ const STORAGE_KEY = "darkModeEnabled";
 // Başlangıçta kapalı olarak ayarla ve icon'u güncelle
 browser.runtime.onInstalled.addListener(async () => {
   await browser.storage.local.set({ [STORAGE_KEY]: false });
-  await browser.action.setIcon({ path: "images/icon.png" });
+  await browser.action.setIcon({ path: "images/darkduck.png" });
   console.log("Extension installed, default state: OFF");
 });
 
@@ -19,7 +19,7 @@ browser.action.onClicked.addListener(async (tab) => {
     
     // Icon'u güncelle
     await browser.action.setIcon({
-      path: newState ? "images/icon-active.png" : "images/icon.png"
+      path: newState ? "images/darkduck.png" : "images/whiteduck.png"
     });
     
     // Content script'e mesaj gönder
