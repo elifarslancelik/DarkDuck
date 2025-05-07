@@ -1,0 +1,739 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B09687CE2DCB41CB00C522ED /* DarkDuck Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B09687CD2DCB41CB00C522ED /* DarkDuck Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B09687B82DCB41CB00C522ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B09687932DCB41CA00C522ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B096879A2DCB41CA00C522ED;
+			remoteInfo = DarkDuck;
+		};
+		B09687C22DCB41CB00C522ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B09687932DCB41CA00C522ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B096879A2DCB41CA00C522ED;
+			remoteInfo = DarkDuck;
+		};
+		B09687CF2DCB41CB00C522ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B09687932DCB41CA00C522ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B09687CC2DCB41CB00C522ED;
+			remoteInfo = "DarkDuck Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B09687ED2DCB41CB00C522ED /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B09687CE2DCB41CB00C522ED /* DarkDuck Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B096879B2DCB41CA00C522ED /* DarkDuck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DarkDuck.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B09687B72DCB41CB00C522ED /* DarkDuckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DarkDuckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B09687C12DCB41CB00C522ED /* DarkDuckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DarkDuckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B09687CD2DCB41CB00C522ED /* DarkDuck Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "DarkDuck Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B09687E72DCB41CB00C522ED /* Exceptions for "DarkDuck Extension" folder in "DarkDuck Extension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B09687CC2DCB41CB00C522ED /* DarkDuck Extension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		B096879D2DCB41CA00C522ED /* DarkDuck */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = DarkDuck;
+			sourceTree = "<group>";
+		};
+		B09687BA2DCB41CB00C522ED /* DarkDuckTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = DarkDuckTests;
+			sourceTree = "<group>";
+		};
+		B09687C42DCB41CB00C522ED /* DarkDuckUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = DarkDuckUITests;
+			sourceTree = "<group>";
+		};
+		B09687D12DCB41CB00C522ED /* DarkDuck Extension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B09687E72DCB41CB00C522ED /* Exceptions for "DarkDuck Extension" folder in "DarkDuck Extension" target */,
+			);
+			explicitFolders = (
+				Resources/_locales,
+				Resources/images,
+			);
+			path = "DarkDuck Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B09687982DCB41CA00C522ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B09687B42DCB41CB00C522ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B09687BE2DCB41CB00C522ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B09687CA2DCB41CB00C522ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B09687922DCB41CA00C522ED = {
+			isa = PBXGroup;
+			children = (
+				B096879D2DCB41CA00C522ED /* DarkDuck */,
+				B09687BA2DCB41CB00C522ED /* DarkDuckTests */,
+				B09687C42DCB41CB00C522ED /* DarkDuckUITests */,
+				B09687D12DCB41CB00C522ED /* DarkDuck Extension */,
+				B096879C2DCB41CA00C522ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B096879C2DCB41CA00C522ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B096879B2DCB41CA00C522ED /* DarkDuck.app */,
+				B09687B72DCB41CB00C522ED /* DarkDuckTests.xctest */,
+				B09687C12DCB41CB00C522ED /* DarkDuckUITests.xctest */,
+				B09687CD2DCB41CB00C522ED /* DarkDuck Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B096879A2DCB41CA00C522ED /* DarkDuck */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B09687EE2DCB41CB00C522ED /* Build configuration list for PBXNativeTarget "DarkDuck" */;
+			buildPhases = (
+				B09687972DCB41CA00C522ED /* Sources */,
+				B09687982DCB41CA00C522ED /* Frameworks */,
+				B09687992DCB41CA00C522ED /* Resources */,
+				B09687ED2DCB41CB00C522ED /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B09687D02DCB41CB00C522ED /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B096879D2DCB41CA00C522ED /* DarkDuck */,
+			);
+			name = DarkDuck;
+			packageProductDependencies = (
+			);
+			productName = DarkDuck;
+			productReference = B096879B2DCB41CA00C522ED /* DarkDuck.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B09687B62DCB41CB00C522ED /* DarkDuckTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B09687F12DCB41CB00C522ED /* Build configuration list for PBXNativeTarget "DarkDuckTests" */;
+			buildPhases = (
+				B09687B32DCB41CB00C522ED /* Sources */,
+				B09687B42DCB41CB00C522ED /* Frameworks */,
+				B09687B52DCB41CB00C522ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B09687B92DCB41CB00C522ED /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B09687BA2DCB41CB00C522ED /* DarkDuckTests */,
+			);
+			name = DarkDuckTests;
+			packageProductDependencies = (
+			);
+			productName = DarkDuckTests;
+			productReference = B09687B72DCB41CB00C522ED /* DarkDuckTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B09687C02DCB41CB00C522ED /* DarkDuckUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B09687F42DCB41CB00C522ED /* Build configuration list for PBXNativeTarget "DarkDuckUITests" */;
+			buildPhases = (
+				B09687BD2DCB41CB00C522ED /* Sources */,
+				B09687BE2DCB41CB00C522ED /* Frameworks */,
+				B09687BF2DCB41CB00C522ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B09687C32DCB41CB00C522ED /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B09687C42DCB41CB00C522ED /* DarkDuckUITests */,
+			);
+			name = DarkDuckUITests;
+			packageProductDependencies = (
+			);
+			productName = DarkDuckUITests;
+			productReference = B09687C12DCB41CB00C522ED /* DarkDuckUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		B09687CC2DCB41CB00C522ED /* DarkDuck Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B09687E82DCB41CB00C522ED /* Build configuration list for PBXNativeTarget "DarkDuck Extension" */;
+			buildPhases = (
+				B09687C92DCB41CB00C522ED /* Sources */,
+				B09687CA2DCB41CB00C522ED /* Frameworks */,
+				B09687CB2DCB41CB00C522ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B09687D12DCB41CB00C522ED /* DarkDuck Extension */,
+			);
+			name = "DarkDuck Extension";
+			packageProductDependencies = (
+			);
+			productName = "DarkDuck Extension";
+			productReference = B09687CD2DCB41CB00C522ED /* DarkDuck Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B09687932DCB41CA00C522ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					B096879A2DCB41CA00C522ED = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					B09687B62DCB41CB00C522ED = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = B096879A2DCB41CA00C522ED;
+					};
+					B09687C02DCB41CB00C522ED = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = B096879A2DCB41CA00C522ED;
+					};
+					B09687CC2DCB41CB00C522ED = {
+						CreatedOnToolsVersion = 16.3;
+					};
+				};
+			};
+			buildConfigurationList = B09687962DCB41CA00C522ED /* Build configuration list for PBXProject "DarkDuck" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B09687922DCB41CA00C522ED;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = B096879C2DCB41CA00C522ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B096879A2DCB41CA00C522ED /* DarkDuck */,
+				B09687B62DCB41CB00C522ED /* DarkDuckTests */,
+				B09687C02DCB41CB00C522ED /* DarkDuckUITests */,
+				B09687CC2DCB41CB00C522ED /* DarkDuck Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B09687992DCB41CA00C522ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B09687B52DCB41CB00C522ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B09687BF2DCB41CB00C522ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B09687CB2DCB41CB00C522ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B09687972DCB41CA00C522ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B09687B32DCB41CB00C522ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B09687BD2DCB41CB00C522ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B09687C92DCB41CB00C522ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B09687B92DCB41CB00C522ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B096879A2DCB41CA00C522ED /* DarkDuck */;
+			targetProxy = B09687B82DCB41CB00C522ED /* PBXContainerItemProxy */;
+		};
+		B09687C32DCB41CB00C522ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B096879A2DCB41CA00C522ED /* DarkDuck */;
+			targetProxy = B09687C22DCB41CB00C522ED /* PBXContainerItemProxy */;
+		};
+		B09687D02DCB41CB00C522ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B09687CC2DCB41CB00C522ED /* DarkDuck Extension */;
+			targetProxy = B09687CF2DCB41CB00C522ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B09687E92DCB41CB00C522ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "DarkDuck Extension/DarkDuck_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DarkDuck Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "DarkDuck Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = elifars.DarkDuck.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B09687EA2DCB41CB00C522ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "DarkDuck Extension/DarkDuck_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DarkDuck Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "DarkDuck Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = elifars.DarkDuck.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B09687EB2DCB41CB00C522ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B09687EC2DCB41CB00C522ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		B09687EF2DCB41CB00C522ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DarkDuck/DarkDuck.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = DarkDuck;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = elifars.DarkDuck;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B09687F02DCB41CB00C522ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DarkDuck/DarkDuck.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = DarkDuck;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = elifars.DarkDuck;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B09687F22DCB41CB00C522ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = elifars.DarkDuckTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DarkDuck.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DarkDuck";
+			};
+			name = Debug;
+		};
+		B09687F32DCB41CB00C522ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = elifars.DarkDuckTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DarkDuck.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DarkDuck";
+			};
+			name = Release;
+		};
+		B09687F52DCB41CB00C522ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = elifars.DarkDuckUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = DarkDuck;
+			};
+			name = Debug;
+		};
+		B09687F62DCB41CB00C522ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = elifars.DarkDuckUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = DarkDuck;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B09687962DCB41CA00C522ED /* Build configuration list for PBXProject "DarkDuck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B09687EB2DCB41CB00C522ED /* Debug */,
+				B09687EC2DCB41CB00C522ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B09687E82DCB41CB00C522ED /* Build configuration list for PBXNativeTarget "DarkDuck Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B09687E92DCB41CB00C522ED /* Debug */,
+				B09687EA2DCB41CB00C522ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B09687EE2DCB41CB00C522ED /* Build configuration list for PBXNativeTarget "DarkDuck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B09687EF2DCB41CB00C522ED /* Debug */,
+				B09687F02DCB41CB00C522ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B09687F12DCB41CB00C522ED /* Build configuration list for PBXNativeTarget "DarkDuckTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B09687F22DCB41CB00C522ED /* Debug */,
+				B09687F32DCB41CB00C522ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B09687F42DCB41CB00C522ED /* Build configuration list for PBXNativeTarget "DarkDuckUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B09687F52DCB41CB00C522ED /* Debug */,
+				B09687F62DCB41CB00C522ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B09687932DCB41CA00C522ED /* Project object */;
+}
