@@ -29,9 +29,6 @@
 
 ## DarkDuck On/Off SS
 
-```bash
-## 🖼️ DarkDuck
-
 ![DarkDuckOn](onss.png)
 
 ![DarkDuckOff](offss.png)
