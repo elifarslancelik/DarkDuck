@@ -16,8 +16,8 @@
   },
   "action": {
     "default_icon": {
-      "16": "darkduck/icon.png",
-      "32": "whiteduck/icon.png"
+      "16": "images/darkduck.png",
+      "32": "images/whiteduck.png"
     }
   },
   "content_scripts": [
