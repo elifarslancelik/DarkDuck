@@ -34,8 +34,6 @@ class ViewController: NSViewController {
         ])
     }
     
-    // ... existing code ...
-    
     private func loadHelpPage() {
         let appIcon = NSImage(named: "AppIcon")
         var base64Icon = ""
@@ -94,21 +92,27 @@ class ViewController: NSViewController {
             <script>
                 function togglePrivacy() {
                     var privacySection = document.getElementById("privacy");
-                    privacySection.style.display = (privacySection.style.display === "none") ? "block" : "none";
+                    var currentDisplay = window.getComputedStyle(privacySection).display;
+
+                    privacySection.style.display = (currentDisplay === "none") ? "block" : "none";
 
                     if (privacySection.style.display === "block") {
-                        privacySection.focus();  // Focus on the privacy section when it's shown
+                        privacySection.focus();
                     }
                 }
+
 
                 function toggleSupport() {
                     var supportSection = document.getElementById("support");
-                    supportSection.style.display = (supportSection.style.display === "none") ? "block" : "none";
+                    var currentDisplay = window.getComputedStyle(supportSection).display;
+
+                    supportSection.style.display = (currentDisplay === "none") ? "block" : "none";
 
                     if (supportSection.style.display === "block") {
-                        supportSection.focus();  // Focus on the support section when it's shown
+                        supportSection.focus();
                     }
                 }
+
             </script>
         </head>
         <body>
