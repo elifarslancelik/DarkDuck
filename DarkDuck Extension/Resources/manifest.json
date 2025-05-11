@@ -16,8 +16,12 @@
   },
   "action": {
     "default_icon": {
-      "16": "images/darkduck.png",
-      "32": "images/whiteduck.png"
+      "64": "images/wd/Icon-64.png"
+    },
+    "default_title": "DarkDuck",
+    "default_popup": "",
+    "active_icon": {
+      "64": "images/dd/Icon-64.png"
     }
   },
   "content_scripts": [

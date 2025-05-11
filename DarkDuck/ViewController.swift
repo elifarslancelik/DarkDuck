@@ -66,6 +66,7 @@ class ViewController: NSViewController {
         </style>
     </head>
     <body>
+        <img src="AppIcon" class="app-icon" alt="DarkDuck Icon">
         <h1>DarkDuck Kurulum Rehberi</h1>
         
         <div class="step">
@@ -96,6 +97,6 @@ class ViewController: NSViewController {
     </html>
     """
         
-        webView.loadHTMLString(htmlString, baseURL: nil)
+        webView.loadHTMLString(htmlString, baseURL: Bundle.main.resourceURL)
     }
 }
