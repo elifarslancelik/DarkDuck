@@ -1,24 +1,62 @@
 // Sayfa yüklendiğinde dark mode durumunu kontrol et
 initializeDarkMode();
+observeSystemTheme();
 
 async function initializeDarkMode() {
-  const { darkModeEnabled } = await browser.storage.local.get("darkModeEnabled");
-  if (darkModeEnabled) {
-    applyDarkMode();
+  const { darkModeEnabled, manualOverride } = await browser.storage.local.get(["darkModeEnabled", "manualOverride"]);
+
+  if (manualOverride) {
+    // Manuel override varsa, kaydedilen durumu uygula
+    darkModeEnabled ? applyDarkMode() : removeDarkMode();
+  } else {
+    // Override yoksa sistem temasına göre karar ver
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if (systemPrefersDark) {
+      applyDarkMode();
+    } else {
+      removeDarkMode();
+    }
+
+    // Sistemi depolayıp background'a bildir
+    await browser.storage.local.set({ darkModeEnabled: systemPrefersDark });
+
+    await browser.runtime.sendMessage({
+      action: "systemThemeChanged",
+      isEnabled: systemPrefersDark
+    });
   }
 }
 
-// Mesaj dinleyici
+// Sistem temasındaki değişiklikleri dinle
+function observeSystemTheme() {
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', async (e) => {
+    const isDark = e.matches;
+    const { manualOverride } = await browser.storage.local.get("manualOverride");
+
+    if (!manualOverride) {
+      await browser.storage.local.set({ darkModeEnabled: isDark });
+
+      await browser.runtime.sendMessage({
+        action: "systemThemeChanged",
+        isEnabled: isDark
+      });
+    }
+  });
+}
+
+// Mesaj dinleyici (background'dan gelen güncellemeler için)
 browser.runtime.onMessage.addListener((message) => {
   if (message.action === "updateDarkMode") {
     message.isEnabled ? applyDarkMode() : removeDarkMode();
   }
 });
 
+// Dark Mode Stil Uygulayıcı
 function applyDarkMode() {
-  if (!document.documentElement.classList.contains("darkduck-mode")) {
-    document.documentElement.classList.add("darkduck-mode");
-    
+  document.documentElement.classList.add("darkduck-mode");
+
+  if (!document.getElementById("darkduck-styles")) {
     const style = document.createElement("style");
     style.id = "darkduck-styles";
     style.textContent = `
@@ -30,13 +68,12 @@ function applyDarkMode() {
         --dark-link: #90caf9;
         --dark-input: #2d2d2d;
       }
-      
+
       .darkduck-mode body {
         background-color: var(--dark-bg) !important;
         color: var(--dark-text) !important;
       }
-      
-      /* Tüm temel elementler */
+
       .darkduck-mode div,
       .darkduck-mode section,
       .darkduck-mode article,
@@ -48,13 +85,11 @@ function applyDarkMode() {
         background-color: var(--dark-element) !important;
         color: var(--dark-text) !important;
       }
-      
-      /* Bağlantılar */
+
       .darkduck-mode a {
         color: var(--dark-link) !important;
       }
-      
-      /* Form elementleri */
+
       .darkduck-mode input,
       .darkduck-mode textarea,
       .darkduck-mode select {
@@ -62,35 +97,32 @@ function applyDarkMode() {
         color: var(--dark-text) !important;
         border-color: var(--dark-border) !important;
       }
-      
-      /* Tablolar */
+
       .darkduck-mode table {
         background-color: var(--dark-element) !important;
         border-color: var(--dark-border) !important;
       }
-      
+
       .darkduck-mode th,
       .darkduck-mode td {
         border-color: var(--dark-border) !important;
       }
-      
-      /* Özel component'ler */
+
       .darkduck-mode .card,
       .darkduck-mode .panel,
       .darkduck-mode .modal {
         background-color: var(--dark-element) !important;
         border-color: var(--dark-border) !important;
       }
-      
-      /* Scrollbar */
+
       .darkduck-mode ::-webkit-scrollbar {
         width: 12px !important;
       }
-      
+
       .darkduck-mode ::-webkit-scrollbar-track {
         background: var(--dark-element) !important;
       }
-      
+
       .darkduck-mode ::-webkit-scrollbar-thumb {
         background: var(--dark-border) !important;
         border-radius: 6px !important;

@@ -1,39 +1,64 @@
 const STORAGE_KEY = "darkModeEnabled";
+const MANUAL_OVERRIDE_KEY = "manualOverride";
 
-// Başlangıçta kapalı olarak ayarla ve icon'u güncelle
+// Kurulumda varsayılan değerleri ata
 browser.runtime.onInstalled.addListener(async () => {
-  await browser.storage.local.set({ [STORAGE_KEY]: false });
-  await browser.action.setIcon({ path: "images/darkduck.png" });
-  console.log("Extension installed, default state: OFF");
+  await browser.storage.local.set({
+    [STORAGE_KEY]: false,
+    [MANUAL_OVERRIDE_KEY]: false
+  });
+
+  await browser.action.setIcon({ path: "images/wd/Icon-64.png" });
+
+  console.log("Extension installed: dark mode OFF by default");
 });
 
-// Toolbar buton tıklaması
+// Kullanıcı toolbar ikonuna tıkladığında: HER ZAMAN dark mode toggle edilir ve override edilir
 browser.action.onClicked.addListener(async (tab) => {
   try {
-    // Mevcut durumu al
     const { [STORAGE_KEY]: currentState } = await browser.storage.local.get(STORAGE_KEY);
     const newState = !currentState;
-    
-    // Yeni durumu kaydet
-    await browser.storage.local.set({ [STORAGE_KEY]: newState });
-    
-    // Icon'u güncelle
-    await browser.action.setIcon({
-      path: newState ? "images/darkduck.png" : "images/whiteduck.png"
+
+    await browser.storage.local.set({
+      [STORAGE_KEY]: newState,
+      [MANUAL_OVERRIDE_KEY]: true // override'ı aktif et
     });
-    
-    // Content script'e mesaj gönder
-    try {
+
+    await browser.action.setIcon({
+      path: newState ? "images/dd/Icon-64.png" : "images/wd/Icon-64.png"
+    });
+
+    if (tab && tab.id) {
       await browser.tabs.sendMessage(tab.id, {
         action: "updateDarkMode",
         isEnabled: newState
       });
-    } catch (e) {
-      console.log("Injecting content script...");
-      await browser.tabs.executeScript(tab.id, { file: "content.js" });
     }
-    
-  } catch (error) {
-    console.error("Toggle error:", error);
+
+  } catch (e) {
+    console.error("Toggle error:", e);
+  }
+});
+
+// Sistem teması değiştiğinde, sadece manualOverride === false ise uygula
+browser.runtime.onMessage.addListener(async (message, sender) => {
+  if (message.action === "systemThemeChanged") {
+    const { isEnabled } = message;
+    const { [MANUAL_OVERRIDE_KEY]: manualOverride } = await browser.storage.local.get(MANUAL_OVERRIDE_KEY);
+
+    if (!manualOverride) {
+      await browser.storage.local.set({ [STORAGE_KEY]: isEnabled });
+
+      await browser.action.setIcon({
+        path: isEnabled ? "images/dd/Icon-64.png" : "images/wd/Icon-64.png"
+      });
+
+      if (sender.tab?.id) {
+        await browser.tabs.sendMessage(sender.tab.id, {
+          action: "updateDarkMode",
+          isEnabled: isEnabled
+        });
+      }
+    }
   }
 });

@@ -120,23 +120,24 @@ class ViewController: NSViewController {
             <h1>DarkDuck Setup Guide</h1>
 
             <div class="step">
-                <h2>1. Open Safari Preferences</h2>
-                <p>Navigate to Safari > Preferences > Extensions tab.</p>
+                <h2>1. Enable DarkDuck Extension</h2>
+                <p>Go to Safari > Preferences > Extensions tab and enable the DarkDuck extension.</p>
             </div>
 
             <div class="step">
-                <h2>2. Enable DarkDuck Extension</h2>
-                <p>Find the DarkDuck extension and check the box next to it to enable it.</p>
+                <h2>2. Grant Permissions</h2>
+                <p>Provide the necessary permissions for the extension to work properly (Full Website Access).</p>
             </div>
 
             <div class="step">
-                <h2>3. Adjust Permissions</h2>
-                <p>Grant the necessary permissions for the extension to work properly.</p>
+                <h2>3. Automatic or Manual Mode</h2>
+                <p>Initially, dark mode is automatically set based on your system theme. It will change automatically when your system theme changes. You can toggle dark mode manually by clicking the DarkDuck icon in the Safari toolbar to override the system theme.</p>
             </div>
 
             <div class="note">
                 <p>Once the extension is enabled, you can toggle dark mode on any webpage by clicking the DarkDuck icon in your Safari toolbar.</p>
             </div>
+
 
             <div class="footer">
                 <p><a onclick="togglePrivacy()">Privacy Policy</a> |
