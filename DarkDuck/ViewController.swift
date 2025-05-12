@@ -151,9 +151,6 @@ class ViewController: NSViewController {
                 <p><strong>Last updated:</strong> May 11, 2025</p>
                 <p>This Privacy Policy describes Our policies and procedures regarding user privacy when You use the DarkDuck Safari web extension (the "Service"). <strong>Please note that DarkDuck operates locally on your device and does not collect, use, or disclose any of Your personal information.</strong></p>
 
-                <h3>Interpretation and Definitions</h3>
-                <p>The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.</p>
-
                 <h3>Definitions</h3>
                 <ul>
                     <li><strong>Application</strong> refers to the DarkDuck Safari web extension, the software program provided by the Developer.</li>
@@ -161,25 +158,25 @@ class ViewController: NSViewController {
                     <li><strong>Device</strong> means any Apple device that can utilize the Safari web extension.</li>
                     <li><strong>Personal Data</strong> refers to any information related to an identified or identifiable individual. <strong>Please be aware that DarkDuck does not collect any Personal Data.</strong></li>
                     <li><strong>Service</strong> refers to the DarkDuck Safari web extension.</li>
-                    <li><strong>You</strong> mean the individual accessing or using the Service.</li>
+                    <li><strong>You</strong> means the individual accessing or using the Service.</li>
                 </ul>
 
                 <h3>No Collection of Your Personal Data</h3>
                 <p><strong>DarkDuck does not collect any personal data from its users.</strong> The extension operates entirely on your local device. This means:</p>
                 <ul>
-                    <li>We do not ask You to provide any personally identifiable information such as your email address or name.</li>
-                    <li>We do not track Your usage data, such as your IP address, browsing history, or device identifiers.</li>
+                    <li>We do not ask You to provide any personally identifiable information such as your name or email address.</li>
+                    <li>We do not track Your usage data such as IP address, browsing history, or device identifiers.</li>
                     <li>We do not use cookies or similar tracking technologies to collect information.</li>
                 </ul>
 
-                <h3>How the Service Functions</h3>
-                <p>DarkDuck is a Safari web extension that operates locally to provide its intended functionality providing a dark mode for websites. Because it operates locally, it does not transmit any user data to our servers or any third-party servers.</p>
+                <h3>How the Service Works</h3>
+                <p>DarkDuck is a Safari web extension that runs locally to apply dark mode to the websites you visit. It automatically detects your system theme setting (light or dark mode) and formats web pages accordingly. This detection is handled entirely on your device and is never shared with any external server.</p>
 
                 <h3>Third-Party Links</h3>
-                <p>As a web extension, DarkDuck interacts with websites you visit in your Safari browser. Please be aware that these third-party websites have their own privacy policies. We have no control over and assume no responsibility for their content, privacy policies, or practices.</p>
+                <p>DarkDuck interacts with the websites you visit in your Safari browser. Please note that these third-party websites have their own privacy policies, and we have no control over or responsibility for their content or practices.</p>
 
-                <h3>Changes to this Privacy Policy</h3>
-                <p>We may update Our Privacy Policy from time to time. Because DarkDuck does not collect any user data, these updates will primarily serve to reflect any changes in our operational practices or legal requirements related to the distribution of the extension. Changes are effective when posted on this page.</p>
+                <h3>Changes to This Privacy Policy</h3>
+                <p>We may update Our Privacy Policy from time to time. Since DarkDuck does not collect any user data, these updates will primarily reflect operational changes or legal requirements related to the extension’s distribution. Changes take effect when posted on this page.</p>
 
                 <h3>Contact Us</h3>
                 <p>If you have any questions about this Privacy Policy, you may contact us at:<br>
