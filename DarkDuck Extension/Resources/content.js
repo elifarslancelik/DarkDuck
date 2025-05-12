@@ -74,7 +74,7 @@ function applyDarkMode() {
         color: var(--dark-text) !important;
       }
 
-      .darkduck-mode > div:not([data-lat]),
+      .darkduck-mode div,
       .darkduck-mode section,
       .darkduck-mode article,
       .darkduck-mode header,
