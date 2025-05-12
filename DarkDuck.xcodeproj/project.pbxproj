@@ -63,6 +63,13 @@
 			);
 			target = B09687CC2DCB41CB00C522ED /* DarkDuck Extension */;
 		};
+		B0DB137C2DD1FE6000B5BF7D /* Exceptions for "DarkDuck Extension" folder in "DarkDuck" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				PrivacyInfo.xcprivacy,
+			);
+			target = B096879A2DCB41CA00C522ED /* DarkDuck */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -84,6 +91,7 @@
 		B09687D12DCB41CB00C522ED /* DarkDuck Extension */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
+				B0DB137C2DD1FE6000B5BF7D /* Exceptions for "DarkDuck Extension" folder in "DarkDuck" target */,
 				B09687E72DCB41CB00C522ED /* Exceptions for "DarkDuck Extension" folder in "DarkDuck Extension" target */,
 			);
 			explicitFolders = (
