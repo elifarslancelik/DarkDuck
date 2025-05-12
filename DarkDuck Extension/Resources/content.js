@@ -37,7 +37,7 @@ function applyDarkMode() {
       }
       
       /* Tüm temel elementler */
-      .darkduck-mode div,
+      .darkduck-mode > div:not([data-lat]),
       .darkduck-mode section,
       .darkduck-mode article,
       .darkduck-mode header,
