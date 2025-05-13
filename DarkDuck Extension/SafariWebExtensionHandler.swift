@@ -70,7 +70,7 @@ class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
                             error: String? = nil) {
         var response = data
         response["success"] = success
-        if let error = error {
+        if let error {
             response["error"] = error
         }
         
