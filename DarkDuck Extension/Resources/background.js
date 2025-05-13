@@ -28,7 +28,7 @@ browser.action.onClicked.addListener(async (tab) => {
       path: newState ? "images/dd/Icon-64.png" : "images/wd/Icon-64.png"
     });
 
-    if (tab && tab.id) {
+    if (tab?.id) {
       await browser.tabs.sendMessage(tab.id, {
         action: "updateDarkMode",
         isEnabled: newState
