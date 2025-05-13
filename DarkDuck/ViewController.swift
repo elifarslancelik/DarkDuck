@@ -197,7 +197,7 @@ class ViewController: NSViewController {
         </html>
         """
 
-        webView.loadHTMLString(htmlString, baseURL: nil)
+        webView.loadHTMLString(htmlString, baseURL: URL(string: "about:blank"))
     }
 
 }
