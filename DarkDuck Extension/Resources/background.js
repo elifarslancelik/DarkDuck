@@ -10,7 +10,7 @@ browser.runtime.onInstalled.addListener(async () => {
 
   await browser.action.setIcon({ path: "images/wd/Icon-64.png" });
 
-  console.log("Extension installed: dark mode OFF by default");
+  
 });
 
 // Kullanıcı toolbar ikonuna tıkladığında: HER ZAMAN dark mode toggle edilir ve override edilir
