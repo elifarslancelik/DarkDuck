@@ -4,7 +4,7 @@ const STORAGE_KEY = "darkModeEnabled";
 browser.runtime.onInstalled.addListener(async () => {
   await browser.storage.local.set({ [STORAGE_KEY]: false });
   await browser.action.setIcon({ path: "images/darkduck.png" });
-  console.log("Extension installed, default state: OFF");
+  
 });
 
 // Toolbar buton tıklaması
