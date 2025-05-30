@@ -3,6 +3,7 @@
   "name": "DarkDuck",
   "description": "Toggle dark mode on any website.",
   "version": "1.0",
+  "default_locale": "en",
   "permissions": [
     "storage",
     "scripting"
