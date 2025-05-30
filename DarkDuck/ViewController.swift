@@ -121,7 +121,7 @@ class ViewController: NSViewController {
 
             <div class="step">
                 <h2>1. Enable DarkDuck Extension</h2>
-                <p>Go to Safari > Preferences > Extensions tab and enable the DarkDuck extension.</p>
+                <p>Go to Safari > Settings > Extensions tab and enable the DarkDuck extension.</p>
             </div>
 
             <div class="step">
