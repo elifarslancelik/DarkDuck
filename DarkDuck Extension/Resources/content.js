@@ -62,7 +62,7 @@ function applyDarkMode() {
     style.textContent = `
       :root.darkduck-mode {
         --dark-bg: #121212;
-        --dark-text: #e0e0e0;
+        --dark-text: whitesmoke;
         --dark-element: #1e1e1e;
         --dark-border: #333;
         --dark-link: #90caf9;
@@ -74,25 +74,43 @@ function applyDarkMode() {
         color: var(--dark-text) !important;
       }
 
-      .darkduck-mode div,
-      .darkduck-mode section,
-      .darkduck-mode article,
-      .darkduck-mode header,
-      .darkduck-mode footer,
-      .darkduck-mode nav,
-      .darkduck-mode aside,
-      .darkduck-mode main {
+      .darkduck-mode div:not([style*="color"]),
+      .darkduck-mode section:not([style*="color"]),
+      .darkduck-mode article:not([style*="color"]),
+      .darkduck-mode header:not([style*="color"]),
+      .darkduck-mode footer:not([style*="color"]),
+      .darkduck-mode nav:not([style*="color"]),
+      .darkduck-mode aside:not([style*="color"]),
+      .darkduck-mode main:not([style*="color"]),
+      .darkduck-mode p:not([style*="color"]),
+      .darkduck-mode h1:not([style*="color"]),
+      .darkduck-mode h2:not([style*="color"]),
+      .darkduck-mode h3:not([style*="color"]),
+      .darkduck-mode h4:not([style*="color"]),
+      .darkduck-mode h5:not([style*="color"]),
+      .darkduck-mode h6:not([style*="color"]) {
         background-color: var(--dark-element) !important;
         color: var(--dark-text) !important;
       }
 
-      .darkduck-mode a {
+      /* İkonları dark mode'dan hariç tut */
+      .darkduck-mode i,
+      .darkduck-mode [class*="icon"],
+      .darkduck-mode [class*="Icon"],
+      .darkduck-mode [class*="fa-"],
+      .darkduck-mode [class*="material-icons"],
+      .darkduck-mode svg {
+        color: inherit !important;
+        background-color: transparent !important;
+      }
+
+      .darkduck-mode a:not([style*="color"]) {
         color: var(--dark-link) !important;
       }
 
-      .darkduck-mode input,
-      .darkduck-mode textarea,
-      .darkduck-mode select {
+      .darkduck-mode input:not([style*="color"]),
+      .darkduck-mode textarea:not([style*="color"]),
+      .darkduck-mode select:not([style*="color"]) {
         background-color: var(--dark-input) !important;
         color: var(--dark-text) !important;
         border-color: var(--dark-border) !important;
