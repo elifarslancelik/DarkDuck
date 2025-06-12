@@ -74,7 +74,7 @@ function applyDarkMode() {
         color: var(--dark-text) !important;
       }
 
-      .darkduck-mode div:not([style*="color"]),
+      .darkduck-mode div:not([style*="color"]):not(figure):not(.unit-image-wrapper),
       .darkduck-mode section:not([style*="color"]),
       .darkduck-mode article:not([style*="color"]),
       .darkduck-mode header:not([style*="color"]),
