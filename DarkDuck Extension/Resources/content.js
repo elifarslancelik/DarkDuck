@@ -679,6 +679,56 @@ function applyDarkMode() {
         color: var(--text-color) !important;
         background-color: var(--element-bg) !important;
       }
+
+      /* OLX özel düzeltmeleri */
+      .darkduck-mode .css-6xmoyq,
+      .darkduck-mode .css-6xmoyq * {
+        color: var(--text-color) !important;
+        background-color: var(--element-bg) !important;
+      }
+
+      .darkduck-mode .css-6xmoyq:hover,
+      .darkduck-mode .css-6xmoyq:hover * {
+        background-color: #2d2d2d !important;
+        color: var(--text-color) !important;
+      }
+
+      /* OLX arama dropdown'u için özel düzeltme */
+      .darkduck-mode [class*="search-suggestions"],
+      .darkduck-mode [class*="search-suggestions"] *,
+      .darkduck-mode [class*="search-dropdown"],
+      .darkduck-mode [class*="search-dropdown"] * {
+        background-color: var(--element-bg) !important;
+        color: var(--text-color) !important;
+      }
+
+      .darkduck-mode [class*="search-suggestions"] [class*="item"]:hover,
+      .darkduck-mode [class*="search-suggestions"] [class*="item"]:hover *,
+      .darkduck-mode [class*="search-dropdown"] [class*="item"]:hover,
+      .darkduck-mode [class*="search-dropdown"] [class*="item"]:hover * {
+        background-color: #2d2d2d !important;
+        color: var(--text-color) !important;
+      }
+
+      /* OLX için ek özel düzeltme */
+      .darkduck-mode .css-1699hhh,
+      .darkduck-mode .css-1699hhh * {
+        background-color: var(--element-bg) !important;
+        color: var(--text-color) !important;
+      }
+
+      .darkduck-mode .css-1699hhh:hover,
+      .darkduck-mode .css-1699hhh:hover * {
+        background-color: #2d2d2d !important;
+        color: var(--text-color) !important;
+      }
+
+      /* OLX arama dropdown'u için özel düzeltme */
+      .darkduck-mode [class*="search-dropdown"] [class*="item"]:hover * {
+        background-color: #2d2d2d !important;
+        color: var(--text-color) !important;
+      }
+        
     `;
     document.head.appendChild(style);
   }
