@@ -142,7 +142,7 @@ class ViewController: NSViewController {
             <div class="footer">
                 <p><a onclick="togglePrivacy()">Privacy Policy</a> |
                    <a onclick="toggleSupport()">Support</a></p>
-                <p class="note">DarkDuck v1.0</p>
+                <p class="note">DarkDuck v1.1</p>
             </div>
 
             <!-- Privacy Policy -->
